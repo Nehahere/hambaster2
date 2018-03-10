@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,24 +16,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Sign In"
-        android:"@+id/textview"
+        android:text="@string/Sign_In_Title"
         android:layout_Parenttop="true"
         android:layout_ParentLeft="true"
         android:layout_ParentStart="true"
-        tandroid:singleLine="true" />
+        />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:id="@+id/editText"
         android:ems="10"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/editText"
         android:width="320dp"
         tools:layout_editor_absoluteY="63dp"
-        tools:layout_editor_absoluteX="32dp" />
+        tools:layout_editor_absoluteX="32dp"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/editText2"
@@ -41,17 +41,21 @@
         android:layout_height="53dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:layout_centerHorizontal="true"
         android:width="320dp"
         tools:layout_editor_absoluteY="132dp"
         tools:layout_editor_absoluteX="52dp"
-        />
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginTop="31dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="107dp"
         android:layout_height="62dp"
-        android:text="Log In"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="217dp" />
-</android.support.constraint.ConstraintLayout>
+        android:text="@string/Log_In"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="224dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+</RelativeLayout>

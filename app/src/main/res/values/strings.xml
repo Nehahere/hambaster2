@@ -6,7 +6,8 @@
     <string name="action_settings">Settings</string>
     <string name="Sign_In_Title">Sign In!</string>
     <string name="Log_In">Log In</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
-    </resources>
+</resources>
 
 

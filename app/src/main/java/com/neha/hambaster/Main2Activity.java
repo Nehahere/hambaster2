@@ -10,7 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
-import  android.graphics.Color;
+import android.graphics.Color;
+//import android.widget.EditText;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -19,19 +20,32 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         RelativeLayout nehaslayout= new RelativeLayout(this);
-        nehaslayout.setBackgroundColor(Color.GREEN);
-        RelativeLayout.LayoutParams buttonDetails= new RelativeLayout.LayoutParams(
-                RelativeLayout.LayoutParams.WRAP_CONTENT,
-                RelativeLayout.LayoutParams.WRAP_CONTENT
-        );
-        buttonDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
-        buttonDetails.addRule(RelativeLayout.CENTER_VERTICAL);
+        //nehaslayout.setBackgroundColor(Color.GREEN);
 
         Button redbutton=new Button(this);
-        redbutton.setText("Click me hoss");
-        redbutton.setBackgroundColor(Color.RED);
+        /*redbutton.setText("Log In");
+        redbutton.setBackgroundColor(Color.RED);*/
 
-        nehaslayout.addView(redbutton,buttonDetails);
+       // EditText username=new EditText(this);
+
+        /*redbutton.setId(1);
+        username.setId(2);*/
+       /* RelativeLayout.LayoutParams buttonDetails= new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT
+        );*/
+        /*RelativeLayout.LayoutParams usernameDetails= new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT
+        );*/
+
+        /*usernameDetails.addRule();
+        buttonDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
+        buttonDetails.addRule(RelativeLayout.CENTER_VERTICAL);*/
+
+
+
+        nehaslayout.addView(redbutton);
 
         setContentView(nehaslayout);
     }

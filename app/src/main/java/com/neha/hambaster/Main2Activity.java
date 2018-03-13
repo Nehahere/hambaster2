@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.graphics.Color;
 import android.widget.EditText;
+import android.content.res.Resources;
+import android.util.TypedValue;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -43,6 +45,13 @@ public class Main2Activity extends AppCompatActivity {
 
         buttonDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
         buttonDetails.addRule(RelativeLayout.CENTER_VERTICAL);
+
+        Resources r= getResources();
+        int px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,200,
+                r.getDisplayMetrics()
+        );
+
+        username.setWidth(px);
 
         usernameDetails.addRule(RelativeLayout.ABOVE,redbutton.getId());
         usernameDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);

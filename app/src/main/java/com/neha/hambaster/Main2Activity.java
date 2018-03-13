@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.graphics.Color;
-//import android.widget.EditText;
+import android.widget.EditText;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -26,26 +26,30 @@ public class Main2Activity extends AppCompatActivity {
         redbutton.setText("Log In");
         redbutton.setBackgroundColor(Color.RED);
 
-       // EditText username=new EditText(this);
+        EditText username=new EditText(this);
 
-        /*redbutton.setId(1);
-        username.setId(2);*/
+        redbutton.setId(1);
+        username.setId(2);
         RelativeLayout.LayoutParams buttonDetails= new RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.WRAP_CONTENT,
                 RelativeLayout.LayoutParams.WRAP_CONTENT
         );
-        /*RelativeLayout.LayoutParams usernameDetails= new RelativeLayout.LayoutParams(
+        RelativeLayout.LayoutParams usernameDetails= new RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.WRAP_CONTENT,
                 RelativeLayout.LayoutParams.WRAP_CONTENT
-        );*/
+        );
 
-        //usernameDetails.addRule();
+
+
         buttonDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
         buttonDetails.addRule(RelativeLayout.CENTER_VERTICAL);
 
-
+        usernameDetails.addRule(RelativeLayout.ABOVE,redbutton.getId());
+        usernameDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
+        usernameDetails.setMargins(0,0,0,50);
 
         nehaslayout.addView(redbutton,buttonDetails);
+        nehaslayout.addView(username,usernameDetails);
 
         setContentView(nehaslayout);
     }

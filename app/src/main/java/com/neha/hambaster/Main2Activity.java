@@ -20,32 +20,32 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         RelativeLayout nehaslayout= new RelativeLayout(this);
-        //nehaslayout.setBackgroundColor(Color.GREEN);
+        nehaslayout.setBackgroundColor(Color.GREEN);
 
         Button redbutton=new Button(this);
-        /*redbutton.setText("Log In");
-        redbutton.setBackgroundColor(Color.RED);*/
+        redbutton.setText("Log In");
+        redbutton.setBackgroundColor(Color.RED);
 
        // EditText username=new EditText(this);
 
         /*redbutton.setId(1);
         username.setId(2);*/
-       /* RelativeLayout.LayoutParams buttonDetails= new RelativeLayout.LayoutParams(
+        RelativeLayout.LayoutParams buttonDetails= new RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.WRAP_CONTENT,
                 RelativeLayout.LayoutParams.WRAP_CONTENT
-        );*/
+        );
         /*RelativeLayout.LayoutParams usernameDetails= new RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.WRAP_CONTENT,
                 RelativeLayout.LayoutParams.WRAP_CONTENT
         );*/
 
-        /*usernameDetails.addRule();
+        //usernameDetails.addRule();
         buttonDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
-        buttonDetails.addRule(RelativeLayout.CENTER_VERTICAL);*/
+        buttonDetails.addRule(RelativeLayout.CENTER_VERTICAL);
 
 
 
-        nehaslayout.addView(redbutton);
+        nehaslayout.addView(redbutton,buttonDetails);
 
         setContentView(nehaslayout);
     }

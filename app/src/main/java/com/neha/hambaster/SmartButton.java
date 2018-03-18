@@ -28,6 +28,29 @@ public class SmartButton extends AppCompatActivity {
                     }
                 }
         );
+
+
+    nehasbutton.setOnLongClickListener(
+            new Button.OnLongClickListener(){
+                public boolean onLongClick(View v){
+                    TextView nehastext =(TextView)findViewById(R.id.nehastext);
+                    nehastext.setText("Holy Carp,that was a long one");
+                    return true;
+                }
+            }
+    );
+
+        nehasbutton.setOnLongClickListener(
+                new Button.OnLongClickListener(){
+                    public boolean onLongClick(View v){
+                        TextView nehastext =(TextView)findViewById(R.id.nehastext);
+                        nehastext.setText("Holy Carp,that was a long one!");
+                        return false;
+                    }
+                }
+        );
     }
 }
+
+
 

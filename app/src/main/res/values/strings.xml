@@ -5,7 +5,7 @@
     <string name="Hello_World">Hello World!</string>
     <string name="action_settings">Settings</string>
     <string name="button">Click Me Hoss</string>
-    <string name="textview">Hello</string>
+    <string name="textview">text_message</string>
 
 </resources>
 

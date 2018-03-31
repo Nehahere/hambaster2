@@ -8,6 +8,9 @@
     <string name="textview">text_message</string>
     <string name="btn">Click Me</string>
     <string name="text">Text_Message</string>
+    <string name="button_text">Dank Meme Bro</string>
+    <string name="bottom">Bottom_text</string>
+    <string name="top">Top_text</string>
 
 </resources>
 

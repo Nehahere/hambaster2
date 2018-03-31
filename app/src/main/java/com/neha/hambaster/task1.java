@@ -1,8 +1,10 @@
 package com.neha.hambaster;
 
 import android.graphics.Color;
+import android.support.design.widget.BaseTransientBottomBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Button;
@@ -24,19 +26,16 @@ GestureDetector.OnDoubleTapListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task1);
 
-        RelativeLayout nehaslayout= new RelativeLayout(this);
-        nehaslayout.setBackgroundColor(Color.GREEN);
-
-        nehasmessage=(TextView)findViewById(R.id.nehasmessage);
+        nehasmessage=(TextView) findViewById(R.id.nehasmessage);
         this.gestureDetector = new GestureDetectorCompat(this,this);
         gestureDetector.setOnDoubleTapListener(this);
 
-        Button nehasbutton=(Button)findViewById(R.id.nehasbutton);
+        Button nehasbutton=(Button) findViewById(R.id.nehasbutton);
         nehasbutton.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View v){
-                        TextView nehastext=(TextView)findViewById(R.id.nehastext);
-                        nehastext.setText("Click Me");
+                        TextView nehasmessage=(TextView)findViewById(R.id.nehasmessage);
+                        nehasmessage.setText("Click Me");
                     }
                 }
         );
@@ -44,16 +43,13 @@ GestureDetector.OnDoubleTapListener{
         nehasbutton.setOnLongClickListener(
                 new Button.OnLongClickListener(){
                     public boolean onLongClick(View v){
-                        TextView nehastext=(TextView)findViewById(R.id.nehastext);
-                        nehastext.setText("Changed on Long Click");
+                        TextView nehasmessage=(TextView)findViewById(R.id.nehasmessage);
+                        nehasmessage.setText("Changed on Long Click");
                         return true;
                     }
                 }
         );
 
-        nehaslayout.addView(nehasbutton);
-
-        setContentView(nehaslayout);
     }
 
 

@@ -16,8 +16,5 @@ public class MemeCreator extends AppCompatActivity implements TopSectionFragment
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meme_creator);
-
-
-
     }
 }

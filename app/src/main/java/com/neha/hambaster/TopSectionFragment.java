@@ -36,6 +36,7 @@ public class TopSectionFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.top_section_fragment,container,false);
 
+
         topTextInput=(EditText) view.findViewById(R.id.topTextInput);
         bottomTextInput=(EditText) view.findViewById(R.id.bottomTextInput);
         final Button button=(Button) view.findViewById(R.id.button);

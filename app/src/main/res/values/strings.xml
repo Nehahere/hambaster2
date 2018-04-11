@@ -11,6 +11,8 @@
     <string name="button_text">Dank Meme Bro</string>
     <string name="bottom">Bottom_text</string>
     <string name="top">Top_text</string>
+    <string name="title_webpage_list">Webpages</string>
+    <string name="title_webpage_detail">Webpage Detail</string>
 
 </resources>
 

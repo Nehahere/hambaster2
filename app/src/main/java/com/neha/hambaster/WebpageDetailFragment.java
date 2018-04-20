@@ -7,7 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.webkit.WebView;
+
 
 import com.neha.hambaster.dummy.DummyContent;
 
@@ -49,7 +50,7 @@ public class WebpageDetailFragment extends Fragment {
             Activity activity = this.getActivity();
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
             if (appBarLayout != null) {
-                appBarLayout.setTitle(mItem.content);
+                appBarLayout.setTitle(mItem.itemname);
             }
         }
     }
@@ -61,7 +62,7 @@ public class WebpageDetailFragment extends Fragment {
 
         // Show the dummy content as text in a TextView.
         if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.webpage_detail)).setText(mItem.details);
+            ((WebView)rootView.findViewById(R.id.detail_area)).loadUrl(mItem.url);
         }
 
         return rootView;

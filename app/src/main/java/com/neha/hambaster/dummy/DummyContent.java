@@ -22,16 +22,14 @@ public class DummyContent {
 
     static {
         // Add some sample items.
-        addItem(new DummyItem("1","google","https://www.google.co.in/"));
-        addItem(new DummyItem("2","shareshelves","http://www.shareshelves.in/"));
-        addItem(new DummyItem("3","Videos","https://www.youtube.com/watch?v=jNoLvbD-O6E&list=PLKuAAJP3yQ19hJ5"));
+        addItem(new DummyItem("1.", "   google", "https://www.google.co.in/"));
+        addItem(new DummyItem("2.", "   shareshelves", "http://www.shareshelves.in/"));
+        addItem(new DummyItem("3.", "   Videos", "https://www.youtube.com/watch?v=jNoLvbD-O6E&list=PLKuAAJP3yQ19hJ5"));
     }
 
     private static void addItem(DummyItem item) {
         ITEMS.add(item);
         ITEM_MAP.put(item.id, item);
-    }
-
     }
 
     /**
@@ -53,4 +51,5 @@ public class DummyContent {
             return itemname;
         }
     }
+
 }

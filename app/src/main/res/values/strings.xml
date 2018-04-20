@@ -1,7 +1,6 @@
 <?xml version="1.0"  encoding="utf-8"?>
 <resources>
     <string name="app_name">Hambaster</string>
-    <string name="title_activity_meme_creator">meme_creator</string>
     <string name="Hello_World">Hello World!</string>
     <string name="action_settings">Settings</string>
     <string name="button">Click Me Hoss</string>

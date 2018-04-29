@@ -12,6 +12,10 @@
     <string name="top">Top_text</string>
     <string name="title_webpage_list">Webpages</string>
     <string name="title_webpage_detail">Webpage Detail</string>
+    <string name="title_activity_main5">MainActivity5</string>
+    <string name="red_string">Red</string>
+    <string name="green_string">Green</string>
+    <string name="yellow_string">Yellow</string>
 
 </resources>
 

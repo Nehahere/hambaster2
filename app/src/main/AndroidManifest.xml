@@ -10,14 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity5"
-            android:label="@string/title_activity_main5"
+            android:name=".Apples"
+            android:label="Apples"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Bacon"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

@@ -16,6 +16,12 @@
     <string name="red_string">Red</string>
     <string name="green_string">Green</string>
     <string name="yellow_string">Yellow</string>
+    <string name="title_activity_main6">Main6Activity</string>
+    <string name="nehasbutton">new_button</string>
+    <string name="apples">Apples</string>
+    <string name="go_to_bacon">Go to bacon</string>
+    <string name="bacon">Bacon</string>
+    <string name="Newbtn">Button</string>
 
 </resources>
 

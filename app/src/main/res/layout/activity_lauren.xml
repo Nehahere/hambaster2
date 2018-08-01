@@ -13,15 +13,15 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="47dp"
-        android:text="Hello"
+        android:text="@string/hello"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/nehasButton"
+        android:id="@+id/NehasButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:onClick="clickNehasButton"
-        android:text="Touch Me Baby!" />
+        android:text="@string/touch_me_baby" />
 </RelativeLayout>

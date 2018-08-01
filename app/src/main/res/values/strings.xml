@@ -23,6 +23,8 @@
     <string name="bacon">Bacon</string>
     <string name="Newbtn">Button</string>
     <string name="title_activity_activity">activity</string>
+    <string name="hello">Hello</string>
+    <string name="touch_me_baby">Touch Me Baby!</string>
 
 </resources>
 

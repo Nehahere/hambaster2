@@ -25,6 +25,7 @@
     <string name="title_activity_activity">activity</string>
     <string name="hello">Hello</string>
     <string name="touch_me_baby">Touch Me Baby!</string>
+    <string name="go_to_apples">Go to Apples</string>
 
 </resources>
 

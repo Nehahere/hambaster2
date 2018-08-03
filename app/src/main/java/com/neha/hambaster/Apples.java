@@ -11,6 +11,8 @@ public class Apples extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apples);
+        Intent intent=new Intent(this,nehasIntentService.class);
+        startService(intent);
     }
 
     public void onClick(View view){

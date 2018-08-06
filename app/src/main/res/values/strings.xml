@@ -26,6 +26,8 @@
     <string name="hello">Hello</string>
     <string name="touch_me_baby">Touch Me Baby!</string>
     <string name="go_to_apples">Go to Apples</string>
+    <string name="title_activity_bound_service">BoundService</string>
+    <string name="whatsthetime">WhatsTheTime?</string>
 
 </resources>
 

@@ -8,20 +8,18 @@
         android:label="Service Test"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Apples"
-            android:label="Service Test">
+            android:name=".BoundService"
+            android:label="@string/title_activity_bound_service"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Bacon"
-            android:label="Bacon"></activity>
 
         <service
-            android:name=".MyService"
+            android:name=".MyService1"
             android:enabled="true"
             android:exported="true"></service>
     </application>
